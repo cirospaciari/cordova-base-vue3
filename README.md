@@ -128,5 +128,5 @@ dev:android roda no aparelho conectado no PC
 build:android apenas compila sem rodar (gera um .apk de debug)
 release:android apenas compila sem rodar em modo release (gera um aab/apk para publicar na loja)
 
-Para publica na loja é necessário assinar o APK/AAB em modo release mas esse tutorial fica para depois, se tiver curiosidade:
+Para publicar na loja é necessário assinar o APK/AAB em modo release mas esse tutorial fica para depois, se tiver curiosidade:
 https://stackoverflow.com/questions/26449512/how-to-create-a-signed-apk-file-using-cordova-command-line-interface
