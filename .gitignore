@@ -25,6 +25,6 @@ node_modules/
 /plugins/
 /platforms/android/
 /platforms/browser/
-/platforms/android/custom-browser/assets/
-/platforms/android/custom-browser/index.html
+/platforms/custom-browser/assets/
+/platforms/custom-browser/index.html
 /www/
