@@ -1,1 +1,0 @@
-import{_ as t,f as o,a,c as s,g as n,w as r,F as c,e as _,h as l}from"./index.4bfb9085.js";const d={},f=_("h1",null,"Test Page!",-1),i=l("Go Home!");function m(u,h){const e=o("router-link");return a(),s(c,null,[f,n(e,{to:"/"},{default:r(()=>[i]),_:1})],64)}var x=t(d,[["render",m]]);export{x as default};
