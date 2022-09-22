@@ -5,10 +5,10 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "dev": "cordova run browser",
-    "dev:android": "cordova run android",
-    "build:android": "cordova build android",
-    "release:android": "cordova build android --release",
+    "dev": "vite build --watch --emptyOutDir",
+    "dev:android": "vite build --emptyOutDir && cordova run android",
+    "build:android": "vite build --emptyOutDir && cordova build android",
+    "release:android": "vite build --emptyOutDir && cordova build android --release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,13 +17,29 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/cordova": "^0.0.34",
+    "@types/node": "^18.0.0",
+    "@vitejs/plugin-vue": "^2.3.3",
     "cordova-android": "^11.0.0",
-    "cordova-browser": "^6.0.0"
+    "cordova-browser": "^6.0.0",
+    "sass": "^1.53.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "concurrently": "^7.4.0",
+    "pinia": "^2.0.14",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.16"
   },
   "cordova": {
     "platforms": [
       "browser",
-      "android"
-    ]
+      "android",
+      "custom-browser"
+    ],
+    "plugins": {}
   }
 }
