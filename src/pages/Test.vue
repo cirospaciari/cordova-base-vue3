@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import usePostStore from '../stores/post.js';
+import usePostStore from '../stores/post';
 import { storeToRefs } from 'pinia'
 
 
